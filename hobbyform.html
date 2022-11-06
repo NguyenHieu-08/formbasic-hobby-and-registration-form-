@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sở thích</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        form {
+            background-color: #ffff;
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+        }
+
+        #heading {
+            background-color: orangered;
+            color: #ffff;
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px 5px 5px 5px;
+            margin: 10px 10px 30px 10px;
+        }
+
+        .form-group {
+            padding: 5px 5px 5px 5px;
+        }
+
+        #name, #email, #hobby {
+            color: blue;
+            box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+        }
+
+        #name {
+            margin-right: 40px;
+            padding-right: 3px;
+        }
+
+        #email {
+            margin-left: 25px;
+            margin-right: 40px;
+            padding-right: 3px;
+        }
+
+        #hobby {
+            margin-left: 80px;
+            margin-right: 36px;
+            padding-right: 3px;
+        }
+
+        .hobbies-2 {
+            margin-left: 190px;
+            
+        }
+
+        .hobbies-3 {
+            margin-left: -2px;
+        }
+
+        #btnsubmit {
+            margin-left: 104px;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <h1 id="heading">SỞ THÍCH CỦA BẠN</h1>
+        <label id="name">Họ và tên</label>
+        <input id="inputname" name="name" placeholder="Nguyễn Văn A" type="text">
+        <br>
+        <label id="email">Email</label>
+        <input id="inputemail" name="email" placeholder="email@gmail.com" type="text">
+        <br>
+        <label id="hobby">Sở thích</label>
+        <span class="hobbies-1">
+            <input name="sport" type="checkbox"><span id="sport">Thể thao</span>
+            <input name="music" type="checkbox"><span id="music">Âm nhạc</span>
+            <input name="reading" type="checkbox"> <span id="reading">Đọc sách</span>
+        </span>
+        <br>
+        <span class="hobbies-2">
+            <input name="surfwebsite" type="checkbox"><span id="surfwebsite">Lướt web</span>
+            <input name="playgames" type="checkbox"><span id="playgames">Chơi game</span>
+            <input name="movies" type="checkbox"><span id="movies">Điện ảnh</span>
+        </span>
+        <br>
+        <span class="hobbies-3">
+            <input name="travelling" type="checkbox"><span id="travelling">Du lịch
+        </span>
+        <br>
+
+        <input id="btnsubmit" type="submit" value="Gửi thông tin">
+        <input id='btnreset' type="reset" value="Nhập lại">
+
+    </form>
+</body>
+
+</html>
